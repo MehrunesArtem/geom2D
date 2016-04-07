@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.5)
+project(geom2D)
+add_subdirectory(tests)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(SOURCE_FILES main.cpp GVector.cpp GVector.h GMatrix.cpp GMatrix.h)
+add_executable(geom2D ${SOURCE_FILES})
